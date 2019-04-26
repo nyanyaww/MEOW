@@ -95,7 +95,7 @@ def train_lstm(batch_size=80, time_step=15, train_begin=2000, train_end=5800):
 ## 预测模型
 
 ```python
-def prediction(times,time_step=20):
+def prediction(time_step=20):
     X = tf.placeholder(tf.float32, shape=[None, time_step, input_size])
     # Y=tf.placeholder(tf.float32, shape=[None,time_step,output_size])
     mean, std, test_x, test_y = get_test_data(time_step)
