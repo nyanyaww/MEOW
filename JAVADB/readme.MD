@@ -114,6 +114,21 @@ void parse(List<String> command, String database) {
 其次2.SHOW TABLES;之后才是正常的数据的操作。
 
 在这个类当中定义了的用法
+
 * SHOW DATABASES;
 * SHOW TABLES;
 * quit;
+
+最后测试的语句
+
+1. SHOW DATABASES;
+2. SHOW TABLES;
+3. SELECT * FROM Animal;
+4. SELECT * FROM checktime WHERE Id=100000;
+5. SELECT * FROM checktime WHERE name=Stephen100000Stephen;
+6. INSERT INTO checktime (Id, name, gender) VALUES (222, Yuki, female);
+7. DROP TABLE IF EXISTS Animal;
+8. CREATE TABLE Animals (Id INTEGER PRIMARY KEY, Name VARCHAR NOT NULL, Kind VARCHAR NOT NULL, Owner VARCHAR NOT NULL, FOREIGN KEY (Owner) REFERENCES People(Username));
+9. SELECT * FROM People WHERE Name=Sam;
+10. SELECT Id, Name, Kind FROM Animal WHERE Owner=ab123;
+11. quit
