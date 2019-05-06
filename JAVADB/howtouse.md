@@ -22,7 +22,7 @@
 
         void initfields(String[] fields) {
             this.fields = fields;
-            colsize = fields.length;       
+            colsize = fields.length;
         }
 
     表支持增删改查，没什么好讲的
